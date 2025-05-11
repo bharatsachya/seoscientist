@@ -6,7 +6,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, ArcElement, T
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Tooltip, Legend);
 
-const BACKEND_URL = 'https://seoscientist-backend.onrender.com'
+const BACKEND_URL = 'http://localhost:8080'; // Adjust this URL to your backend server
 
 const Dashboard = () => {
   const [data, setData] = useState<{ keys: string[]; clicks: number; impressions: number }[]>([]);
